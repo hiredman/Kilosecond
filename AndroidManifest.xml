@@ -10,6 +10,7 @@
 	<receiver android:name="Kilosecond" android:label="Kilosecond">
 		<intent-filter>
 			<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			<action android:name="com.thelastcitadel.CLOCK_TICK" />
         </intent-filter>
         <meta-data
   	      android:name="android.appwidget.provider"
