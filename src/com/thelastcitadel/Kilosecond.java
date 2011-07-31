@@ -63,7 +63,7 @@ public class Kilosecond extends AppWidgetProvider {
 		  ComponentName watchWidget;
 		  remoteViews = new RemoteViews( context.getPackageName(), R.layout.main );
 		  watchWidget = new ComponentName( context, Kilosecond.class );
-		  remoteViews.setTextViewText( R.id.TextView01, String.format("%2.3f", kiloseconds));
+		  remoteViews.setTextViewText( R.id.TextView01, String.format("%1$06.3f", kiloseconds));
 		  appWidgetManager.updateAppWidget( watchWidget, remoteViews );
 	  }
 }
